@@ -21,9 +21,16 @@ body {
   
   p, li, dd, dt, address {
     line-height: 1.5;
-    text-decoration-style: dotted;
   }
 
   address {
     font-style: normal;
+  }
+
+  * {
+    text-decoration-style: dotted;
+  }
+
+  a {
+    text-decoration-style: solid;
   }
