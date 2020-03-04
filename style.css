@@ -1,7 +1,6 @@
 .name {
     background-color: rgb(179,100,0);
     color: rgb(245,248,250);
-    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
