@@ -26,8 +26,24 @@
     </div>
     <script>
       function clickMe() {
+        var myName = "BriannaBeshkin";
+        var letters = myName.length;
+        var thirdCharacter = myName.charAt(2).toUpperCase();
+        var finalCharacter = myName.substring(12, 15);
+        var firstName = myName.substring(0, 7);
+        var lastName = myName.substring(7, 15);
+        var totalLength = firstName.length + lastName.length;
+        document.querySelector(".header").innerHTML = "Brianna Beshkin's Lab 4 " + totalLength;
         const content = document.querySelector(".content");
         content.innerHTML = "Hello world";
+        content.innerHTML +=
+          "<p class='name'>My name has " +
+          letters +
+          " characters</p><p class='character'>The third character in my name is " +
+          thirdCharacter +
+          "</br>" +
+          finalCharacter +
+          "</p>";
       }
     </script>
   </body>

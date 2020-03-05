@@ -4,6 +4,23 @@
         <title>MDN Sample Javascript Lab</title>
     </head>
     <body>
-        Put your MDN work here.
+    <script>
+        function myButton() {
+            function userName() {
+            let name = prompt('Please enter your name.');
+            if (name === null) {
+                userName();
+            } else {
+            localStorage.setItem('name', name)
+            heading.textContent = 'Mozilla is cool, ' + name;
+            }
+            userName();
+            const heading = document.querySelector('h1')
+            heading.textContent = 'Hello world!';
+            let myButton = doscument.querySelectof('button');
+            let heading = document.querySelector('h1')
+        }
+    </script>
+    <button onclick="myButton()">Change user</button>
     </body>
 </html>
