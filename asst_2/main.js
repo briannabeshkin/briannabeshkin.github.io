@@ -14,11 +14,10 @@ for (let x=1; x < 6; x++) {
 toString(x);
 const picture = 'pic' + x + '.jpg';
 newImage.setAttribute('src', picture);
-newImage.onclick = displayed-img.setAttribute('src','picture')
+//newImage.onclick = displayed-img.setAttribute('src','picture')
 }
 
 /* Wiring up the Darken/Lighten button */
-
 
 const btntxt = btn.getAttribute('class');
 if (btntxt === 'dark') {
