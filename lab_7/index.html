@@ -20,14 +20,14 @@
     <div class="container">
       <div class="wrapper">
         <div class="header">Frontend Libraries: Maps Lab</div>
-        <div id="content">
+        <div class="content">
           When your lab is done, this should be replaced with a stylish map.
         </div>
         <div class="footer">Make some markers work!</div>
       </div>
     </div>
     <script>
-      const mymap = L.map("content").setView([39, -77], 10);
+      const mymap = L.map(document.querySelector(".content")).setView([39, -77], 10);
       L.tileLayer(
         "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
         {
@@ -42,7 +42,7 @@
         }
       ).addTo(mymap);
       const mckeldin = L.marker([38.985998, -76.945100], 13).addTo(mymap);
-      L.circle([38.985998, -76.945100],700, {
+      L.circle([38.985998, -76.945100],600, {
         color: 'red',
         fillOpacity: 0.5
       }).addTo(mymap).bindPopup("cicle");
