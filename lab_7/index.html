@@ -20,14 +20,38 @@
     <div class="container">
       <div class="wrapper">
         <div class="header">Frontend Libraries: Maps Lab</div>
-        <div class="content">
+        <div id="content">
           When your lab is done, this should be replaced with a stylish map.
         </div>
         <div class="footer">Make some markers work!</div>
       </div>
     </div>
     <script>
-        /* Your lab code can go here, or in an external file you include */
+      const mymap = L.map("content").setView([39, -77], 10);
+      L.tileLayer(
+        "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+        {
+          maxZoom: 18,
+          attribution:
+            'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          id: "mapbox/streets-v11",
+          tileSize: 512,
+          zoomOffset: -1
+        }
+      ).addTo(mymap);
+      const mckeldin = L.marker([38.985998, -76.945100], 13).addTo(mymap);
+      L.circle([38.985998, -76.945100],700, {
+        color: 'red',
+        fillOpacity: 0.5
+      }).addTo(mymap).bindPopup("cicle");
+      mckeldin.bindPopup("Mckeldin Library").openPopup();
+      const longitude = [-76.996114, -76.848522, -76.84833]
+      const latitude = [38.759579, 39.095288, 38.870336]
+      for (let i = 0; i in latitude; i++){
+        L.marker([latitude[i],longitude[i]], 13).addTo(mymap);
+      }
     </script>
   </body>
 </html>
