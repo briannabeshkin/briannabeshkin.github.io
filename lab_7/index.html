@@ -27,7 +27,10 @@
       </div>
     </div>
     <script>
-      const mymap = L.map(document.querySelector(".content")).setView([39, -77], 10);
+      const mymap = L.map(document.querySelector(".content")).setView(
+        [39, -77],
+        10
+      );
       L.tileLayer(
         "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
         {
@@ -41,17 +44,36 @@
           zoomOffset: -1
         }
       ).addTo(mymap);
-      const mckeldin = L.marker([38.985998, -76.945100], 13).addTo(mymap);
-      L.circle([38.985998, -76.945100],600, {
-        color: 'red',
+      const mckeldin = L.marker([38.985998, -76.9451], 13).addTo(mymap);
+      const circle = L.circle([38.985998, -76.9451], 600, {
+        color: "red",
         fillOpacity: 0.5
-      }).addTo(mymap).bindPopup("cicle");
+      })
+        .addTo(mymap)
+        .bindPopup("circle");
+
+      var polygon = L.polygon([
+        [38.8, -77],
+        [39, -76.8],
+        [38.9, -76.84833]
+      ]).addTo(mymap);
+      
       mckeldin.bindPopup("Mckeldin Library").openPopup();
-      const longitude = [-76.996114, -76.848522, -76.84833]
-      const latitude = [38.759579, 39.095288, 38.870336]
-      for (let i = 0; i in latitude; i++){
-        L.marker([latitude[i],longitude[i]], 13).addTo(mymap);
+      const longitude = [-76.996114, -76.848522, -76.84833];
+      const latitude = [38.759579, 39.095288, 38.870336];
+      for (let i = 0; i in latitude; i++) {
+        L.marker([latitude[i], longitude[i]], 13).addTo(mymap);
       }
+      const popup = L.popup();
+
+      function onMapClick(e) {
+        popup
+          .setLatLng(e.latlng)
+          .setContent("You clicked the map at " + e.latlng.toString())
+          .openOn(mymap);
+      }
+
+      mymap.on("click", onMapClick);
     </script>
   </body>
 </html>
