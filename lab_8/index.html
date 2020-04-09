@@ -58,6 +58,7 @@
           console.log(results);
           const chart = new CanvasJS.Chart("chartContainer", {
             animationEnabled: true,
+
             title: {
               text: "Let's Find Somewhere to Eat",
             },
@@ -66,7 +67,7 @@
               margin: 10,
               interval: 1,
             },
-            axisY2: {
+            axisY: {
               scaleBreaks: {
                 customBreaks: [
                   {
@@ -132,7 +133,7 @@
             ],
           });
           chart.render();
-        })
+        });
     </script>
   </body>
 </html>
