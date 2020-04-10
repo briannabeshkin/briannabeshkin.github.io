@@ -65,7 +65,7 @@ h3 {
   padding: 0 25px;
 }
 
-#content {
+.content {
   background: #fff;
   border: 2px dotted #444;
   align-self: flex-start;
