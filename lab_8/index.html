@@ -58,14 +58,9 @@
           console.log(results);
           const chart = new CanvasJS.Chart("chartContainer", {
             animationEnabled: true,
-
+            theme: "light2",
             title: {
               text: "Let's Find Somewhere to Eat",
-            },
-            axisX: {
-              labelFontSize: 8,
-              margin: 10,
-              interval: 1,
             },
             axisY: {
               scaleBreaks: {
@@ -87,10 +82,8 @@
             },
             data: [
               {
-                type: "bar",
-                name: "food",
-                axisYType: "secondary",
-                color: "#014D65",
+                type: "column",
+                yValueFormatString: "$#,##0.00",
                 dataPoints: [
                   { y: 1, label: "Night Club" },
                   { y: 19, label: "Fast Food - Chain" },
