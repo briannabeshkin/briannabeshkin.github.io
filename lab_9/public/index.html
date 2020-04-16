@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Replace Me With Your Lab Page</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="header">Replace Me With Your Lab Page</div>
+        <div class="content"><div id='box'></div></div>
+        <div class="footer"></div>
+      </div>
+    </div>
+    <script>
+      fetch("/api") // Rather than fetching from PG County, we're going to fetch from our own server.
+        .then((res) => res.json())
+        .then((res) => {
+          const chart = new CanvasJS.Chart('box', {
+            animationEnabled: true,
+            theme: 'light2',
+            title: {
+              text: "Let's Find Somewhere to Eat"
+            },
+            axisX: {
+              labelFontSize: 8,
+              margin: 10,
+              interval: 1
+            },
+            axisY: {
+              scaleBreaks: {
+                customBreaks: [
+                  {
+                    startValue: 20,
+                    endValue: 35
+                  },
+                  {
+                    startValue: 60,
+                    endValue: 120
+                  },
+                  {
+                    startValue: 160,
+                    endValue: 215
+                  }
+                ]
+              }
+            },
+            data: [
+              {
+                type: 'column',
+                dataPoints: res
+              }
+            ]
+          });
+          return chart;
+          chart.render();
+          // Here's where your chart code should go.
+        });
+    </script>
+  </body>
+</html>
