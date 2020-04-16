@@ -33,7 +33,6 @@ function processDataForFrontEnd(req, res) {
     })
     .then((data) => data.reduce((result, current) => {
       if (!result[current.category]) {
-        // eslint-disable-next-line no-param-reassign
         result[current.category] = [];
       }
       result[current.category].push(current);
