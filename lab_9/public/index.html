@@ -16,8 +16,9 @@
     </div>
     <script>
       fetch("/api") // Rather than fetching from PG County, we're going to fetch from our own server.
-        .then((res) => res.json())
-        .then((res) => {
+        .then((result) => result.json())
+        .then((result) => {
+          console.log(result);
           const chart = new CanvasJS.Chart('box', {
             animationEnabled: true,
             theme: 'light2',
@@ -50,7 +51,7 @@
             data: [
               {
                 type: 'column',
-                dataPoints: res
+                dataPoints: result
               }
             ]
           });

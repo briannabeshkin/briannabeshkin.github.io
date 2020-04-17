@@ -25,12 +25,9 @@ function processDataForFrontEnd(req, res) {
   // Your Fetch API call starts here
   // Note that at no point do you "return" anything from this function -
   // it instead handles returning data to your front end at line 34.
+  
   fetch(baseURL)
     .then((r) => r.json())
-    .then((data) => {
-      console.log(data);
-      res.send({ data: data }); // here's where we return data to the front end
-    })
     .then((data) => data.reduce((result, current) => {
       if (!result[current.category]) {
         result[current.category] = [];
@@ -38,6 +35,21 @@ function processDataForFrontEnd(req, res) {
       result[current.category].push(current);
       return result;
     }, {}))
+    .then((data) => {
+      console.log("new data", data);
+      const reformattedData = Object.entries(data).map((m, i) => {
+        console.log(m);
+        return {
+          y: m[1].length,
+          label: m[0]
+        };
+      });
+      return reformattedData;
+    })
+    .then((data) => {
+      console.log(data);
+      res.send({ data: data }); // here's where we return data to the front end
+    })
     .catch((err) => {
       console.log(err);
       res.redirect("/error");
@@ -48,6 +60,7 @@ function processDataForFrontEnd(req, res) {
 // To access it, we can use a "GET" request on the front end
 // by typing in: localhost:3000/api or 127.0.0.1:3000/api
 app.get("/api", (req, res) => {
+  console.log('/api');
   processDataForFrontEnd(req, res);
 });
 
