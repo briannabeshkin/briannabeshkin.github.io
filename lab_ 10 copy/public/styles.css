@@ -1,0 +1,37 @@
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 75px;
+  background: darkred;
+  border: 2px solid dimgrey;
+  color: black;
+  width: 100%;
+  max-height: 100px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1em;
+  float: center;
+}
+
+.doc {
+  font-size: 1em;
+  float: left;
+}
+
+.nav {
+  font-size: 1em;
+  float: right;
+}
