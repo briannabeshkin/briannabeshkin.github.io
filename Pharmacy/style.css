@@ -147,22 +147,22 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 ul.topnav li {float: left;}
 
 ul.topnav li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 20px;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #4CAF50;}
+ul.topnav li a:hover:not(.page) {text-decoration: underline;}
 
 ul.topnav li.right {float: right;}
 
