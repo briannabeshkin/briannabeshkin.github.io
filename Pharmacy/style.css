@@ -141,11 +141,22 @@ ul.topnav li a:hover:not(.page) {text-decoration: underline;}
 }
 
 
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
   display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
