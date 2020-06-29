@@ -3,6 +3,7 @@
   <head>
     <title>NesRx</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -16,6 +17,13 @@
         <li><a href="#solutions">Solutions</a></li>
         <li><a href="#contact">Contact us</a></li>
       </ul>
+
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
@@ -80,11 +88,11 @@
       }
 
       function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    x.className = "topnav";
+    x.style.display = "block";
   }
 }
       
