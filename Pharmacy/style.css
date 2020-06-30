@@ -1,3 +1,7 @@
+.topnav{
+  width: 100%;
+}
+
 .mySlides {
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -163,4 +167,5 @@ ul.topnav li.right {float: right;}
 /* Bottom right text */
 .text-block {
   position: absolute;
+  bottom: 550px;
 }
