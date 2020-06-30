@@ -115,8 +115,8 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
- /* display: flex;
-  justify-content: space-evenly;*/
+  display: flex;
+  justify-content: space-evenly;
 }
 
 ul.topnav li {float: left;}
@@ -163,5 +163,4 @@ ul.topnav li.right {float: right;}
 /* Bottom right text */
 .text-block {
   position: absolute;
-  bottom: 550px;
 }
