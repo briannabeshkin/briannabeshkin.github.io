@@ -30,8 +30,6 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 ul.topnav li {float: left;}
