@@ -1,5 +1,10 @@
 body {margin: 0;}
 
+.image {
+  margin:0;
+  background-size: stretch;
+}
+
 ul.topnav {
   list-style-type: none;
   margin: 0;

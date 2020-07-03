@@ -10,10 +10,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="container">
 
       <!--background-->
-      <div class="image" style="background-image: url('doctor.jpg'); background-repeat: no-repeat; height: 650px;">
+      <!--<div class="image" style="background-image: url('doctor.jpg'); background-repeat: no-repeat; height: 650px;">
         <!--<div class="crossfade">
           <figure></figure>
           <figure></figure>
@@ -22,9 +21,9 @@
           <figure></figure>
         </div>-->
 
-        <div class="empty1"></div>
 
-        <nav class="navbar navbar-expand-md navbar-light">
+
+        <nav class="navbar navbar-expand-xl navbar-light" role="navigation">
           <a class="navbar-brand" href="#">Home</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -32,7 +31,7 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pharmaceuticals</a>
@@ -51,14 +50,37 @@
         </nav>
         <br>
 
-        <div class="empty2"></div>
-      </div>
-      
-      <p>content</p>
-    </div>
 
-    <script type="text/javascript">
+      <!--background-->
+      <img class="mySlides" src="doctor.jpg">
+      <img class="mySlides" src="patient.jpg">
+      <img class="mySlides" src="engineer.jpg">
 
-      </script>
+      <button class="w3-button w3-display-left" id="left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right" id="right" onclick="plusDivs(+1)">&#10095;</button>
+
+
+
+    <!--<p>content</p>-->
+
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+var i;
+var x = document.getElementsByClassName("mySlides");
+if (n > x.length) {slideIndex = 1}
+if (n < 1) {slideIndex = x.length} ;
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+}
+x[slideIndex-1].style.display = "block";
+}
+    </script>
   </body>
 </html>
