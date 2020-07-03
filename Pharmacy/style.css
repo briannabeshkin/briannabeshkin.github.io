@@ -5,16 +5,15 @@
 
 .navbar-nav{
   width: max-content;
-  margin: 0 auto;
-  min-width: 100%;
-}
+  margin: auto;
 
-.navbar-brand{
-  padding-right: 40px;
 }
 
 li {
-  padding: 10px 80px;
+  /*margin: 10px 80px;*/
+  margin: auto;
+  padding-right: 100px;
+  transform: translate(-25%, 0);
 }
 
 .empty2 {
@@ -28,7 +27,6 @@ li {
 nav {
   width: 100%;
   overflow: hidden;
-  
 }
 
 
@@ -36,7 +34,7 @@ img {
   position: absolute;
   /*transform: translate(0,0);*/
   width: 100%;
-  height: 550px;
+  height: 70%;
   z-index:-2;
   top: 0;
   right:0;
@@ -65,6 +63,7 @@ img {
   border-color: transparent;
   position: absolute;
   transform: translate(0, -400%);
+  z-index: -1;
 }
 
 #left:hover, #right:hover {
