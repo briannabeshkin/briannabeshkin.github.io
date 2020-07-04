@@ -26,3 +26,7 @@ nav {
     background-color: white;
   }
 }
+
+.collapse li a {
+  font-weight: bold;
+}

@@ -1,6 +1,5 @@
 #collapsibleNavbar {
   font-size: 20px;
-  margin-left: 50px;
 }
 
 .navbar-nav{
@@ -8,15 +7,13 @@
   margin: auto;
   display: flex;
   flex-shrink: 1;
-
 }
 
-.collpase li {
+.collapse li {
   /*margin: 10px 80px;*/
-  float: center;
-  padding-right: 100px;
-  /*transform: translate(-25%, 0);*/
-
+  padding-left: 50px;
+  padding-right: 50px;
+  transform: translate(-20%, 0);
 }
 
 .empty1 {
@@ -76,8 +73,16 @@ nav {
   }
 }
 
-p {
-  position: absolute;
+.content {
   top: 620px;
-  left:0;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
 }
+
+.collapse li a {
+  font-weight: bold;
+}
+
+
