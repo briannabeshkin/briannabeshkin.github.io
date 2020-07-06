@@ -13,7 +13,7 @@
   /*margin: 10px 80px;*/
   padding-left: 50px;
   padding-right: 50px;
-  transform: translate(-20%, 0);
+  /*transform: translate(-20%, 0);*/
 }
 
 .empty1 {
@@ -82,7 +82,7 @@ nav {
 }
 
 .collapse li a {
-  font-weight: bold;
+
 }
 
 
