@@ -80,7 +80,7 @@ nav {
 }
 
 .content {
-top: 620px;
+top: 73%;
 position: absolute;
 left: 0;
 right: 0;
@@ -163,5 +163,6 @@ html {
 .quick {
   margin-right: 15px;
 }
+
 
 
