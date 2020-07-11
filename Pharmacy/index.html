@@ -10,10 +10,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-
+    <div class="wrapper"></div>
       <!--navigation bar-->
         <nav class="navbar navbar-expand-xl navbar-light" role="navigation">
-          <a class="navbar-brand" href="#">Home</a>
+          <a class="navbar-brand" href="index.html">Home</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -47,13 +47,54 @@
 
       <button class="w3-button w3-display-left" id="left" onclick="plusDivs(-1)">&#10094;</button>
       <button class="w3-button w3-display-right" id="right" onclick="plusDivs(+1)">&#10095;</button>
-      
+    
 
     <!--content-->
     <div class="content">
       <h2>Welcome to NesRx</h2>
-
+      <p>content</p>
+      <img class="footerPic" src="lightblue.jpg">
     </div>
+
+
+    <!--footer-->
+    <div class="footer">
+      <div class="column">
+        <div style="text-align: center;">
+        <h3 class="quick">QUICK LINKS</h3>
+        <div class="links" style="display: inline-block; text-align: left;">
+            <ul class="linkslist">
+              <li class="footer-item">
+                <a  class="item" href="about.html">About us</a>
+              </li>
+              <li class="footer-item">
+                <a  href="pharmaceuticals.html">Pharmaceuticals</a>
+              </li>
+              <li class="footer-item">
+                <a href="services.html">Services</a>
+              </li>    
+              <li class="footer-item">
+                <a href="solutions.html">Solutions</a>
+              </li>    
+              <li class="footer-item">
+                <a href="contact.html">Contact us</a>
+              </li>    
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="contact" style="display: inline-block; text-align: left;">
+        <h3>CONTACT</h3>
+        <a href="mailto: brianna.beshkin@gmail.com"><img src="email.jpg">Email</a></br>
+        <a href="about.html"><img src="linkedin.png">LinkedIn</a>
+      </div>
+      </div>
+      <div class="column">
+        <div class="location" style="display: inline-block; text-align: left;">
+        <h3>LOCATION</h3>
+      </div>
+      </div>
+  </div>
 
   <script>
   var slideIndex = 1;
