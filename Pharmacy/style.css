@@ -24,6 +24,7 @@ nav {
   display: inline-block;
   background: white;
   position: sticky;
+  width: 100%;
 }
 
 
@@ -31,7 +32,7 @@ nav {
   position: absolute;
   /*transform: translate(0,0);*/
   width: 100%;
-  height: 70%;
+  height: 75%;
   z-index:-2;
   top: 0;
   right:0;
@@ -64,7 +65,7 @@ nav {
 }
 
 #left:hover, #right:hover {
-  background-color: rgba(0, 0, 0, 0.338);
+  background-color: rgba(0, 0, 0, 0.543);
 }
 
 
@@ -80,7 +81,7 @@ nav {
 }
 
 .content {
-top: 73%;
+top: 77%;
 position: absolute;
 left: 0;
 right: 0;
@@ -115,16 +116,18 @@ right: 0;
   margin-bottom: 0.01em;
 }*/
 
-.footer-item {
-  margin:0;
-}
+
 
 .column {
   float: left;
-  width: 33.33%;
-  margin-left: auto;
+  width: 20%;
+  margin-left: 40px;
   margin-right: auto;
   position: relative;
+}
+
+.location {
+  margin:0;
 }
 
 /* Clear floats after the columns */
@@ -145,7 +148,10 @@ right: 0;
 .footer{
   text-align:center;
   width: 100%;
-  margin-top: 1200px;
+  margin-top: 1235px;
+  padding:0;
+  position: absolute;
+  overflow: hidden;
 }
 
 .footerPic {
@@ -166,6 +172,51 @@ right: 0;
   padding-right: 10px;
 }
 
+.contact img {
+  margin-bottom: 5px;
+}
+
 .quick {
   margin-right: 15px;
+}
+
+.location {
+  right: 300px;
+}
+.navigation {
+  left: 300px;
+}
+
+
+/* buttons */
+.btn-group {
+  top: 575px;
+  left: 10%;
+}
+
+.btn-group button {
+  background-color:  rgba(250, 250, 250, 0.831); /* Green background */
+  border: none; /*Green border */
+  color: rgb(86, 164, 223); /* White text */
+  padding: 20px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  font-weight: bold;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color:   rgba(0, 0, 0, 0.543);
+  transition: 0.6s ease;
 }
