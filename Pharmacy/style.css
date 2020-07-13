@@ -165,11 +165,8 @@ right: 0;
   padding:0;
   top: 80px;
   left: 0;
-  position: fixed;
-  overflow: auto;
-  white-space: nowrap;
-  height: auto;
-  height: 300px;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 .links {
