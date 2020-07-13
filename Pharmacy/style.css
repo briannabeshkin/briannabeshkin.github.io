@@ -167,8 +167,10 @@ right: 0;
   padding:0;
   top: 80px;
   left: 0;
-  overflow-x: scroll;
   position: fixed;
+  overflow: auto;
+  white-space: nowrap;
+  height: auto;
 }
 
 .footerPic {
