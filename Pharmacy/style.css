@@ -159,15 +159,18 @@ right: 0;
 
 }
 
-.footer{
+div.footer{
   text-align:center;
   margin-top: 1300px;
   padding:0;
   top: 80px;
   left: 0;
-
   overflow: auto;
   white-space: nowrap;
+}
+
+.column {
+  display: inline-block;
 }
 
 .content {
