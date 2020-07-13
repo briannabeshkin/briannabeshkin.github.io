@@ -163,14 +163,14 @@ right: 0;
   text-align:center;
   margin-top: 1000px;
   top: 80px;
-  overflow: auto;
   white-space: nowrap;
+  overflow-x: scroll;
 }
 
 .column {
   display: inline-block;
   width: 25%;
-  position: relative;
+  position: scroll;
 }
 
 .content {
