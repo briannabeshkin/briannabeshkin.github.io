@@ -161,7 +161,8 @@ right: 0;
 
 .footer{
   text-align:center;
-  width: 100%;
+  width: 800px;
+  min-width: 800px;
   margin-top: 1300px;
   padding:0;
   top: 80px;
