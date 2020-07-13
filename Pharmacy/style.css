@@ -21,7 +21,6 @@
 
 nav {
   display: inline-block;
-
 }
 
 .nav-link {
@@ -29,31 +28,34 @@ nav {
 }
 
 .wrapper{
-  position: fixed;
 	margin: 0px;
   top: 0px;
   z-index: 10;
-  position: sticky;
+  width: 100%;
 }
 
 @media(max-width:1200px)  {
   .navbar {
     background-color: white;
   }
+  .wrapper {
+    position: fixed;
+  }
 }
+
 
 /*slideshow*/
 
 
 .title{
  /* background-color: rgba(30, 57, 81, 0.722);*/
- width: 60%;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
   top: 360px;
   left: 60px;
-  color: white;
+  color:black;
 }
 
 .boxTitle {
@@ -112,7 +114,7 @@ nav {
 }
 
 .content {
-top: 750px;
+top: 750px; 
 position: absolute;
 left: 0;
 right: 0;
@@ -201,6 +203,13 @@ right: 0;
 .top {
   margin-top: 547px;
 }
+
+@media(max-width:800px)  {
+  .footer {
+    max-width: 800px;
+  }
+}
+
 
 
 /*buttons*/
