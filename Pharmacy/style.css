@@ -159,15 +159,18 @@ right: 0;
 
 }
 
-.footer{
-  margin-top: 1300px;
-  overflow-x: scroll;
-  overflow-y: hidden;
+div.footer{
+  text-align:center;
+  margin-top: 1000px;
+  top: 80px;
+  overflow: auto;
   white-space: nowrap;
 }
 
 .column {
   display: inline-block;
+  width: 25%;
+  position: relative;
 }
 
 .content {
@@ -189,10 +192,6 @@ right: 0;
 
 .links h3 {
   margin-left: 40px;
-}
-
-.column {
-  width: 25%;
 }
 
 
