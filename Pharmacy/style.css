@@ -160,7 +160,6 @@ right: 0;
 }
 
 .footer{
-  text-align:center;
   margin-top: 1300px;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -169,7 +168,6 @@ right: 0;
 
 .column {
   display: inline-block;
-
 }
 
 .content {
