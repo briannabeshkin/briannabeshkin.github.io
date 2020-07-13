@@ -210,7 +210,7 @@ right: 0;
 }
 
 .btn-group button {
-  background-color:  rgba(154, 154, 154, 0.831); /* Green background */
+  background-color:  rgb(86, 164, 223); /* Green background */
   border: none; /*Green border */
   color: white; /* White text */
   padding: 20px 23px; /* Some padding */
