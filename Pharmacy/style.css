@@ -165,10 +165,8 @@ div.footer{
   padding:0;
   top: 80px;
   left: 0;
-  width: 100px;
-  height: 300px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .column {
