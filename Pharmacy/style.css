@@ -159,13 +159,11 @@ right: 0;
 
 }
 
-div.footer{
+.footer{
   text-align:center;
   margin-top: 1300px;
-  padding:0;
-  top: 80px;
-  left: 0;
-  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
   white-space: nowrap;
 }
 
