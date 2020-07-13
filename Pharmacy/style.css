@@ -167,9 +167,10 @@ right: 0;
   left: 0;
   overflow-y: hidden;
   overflow-x: scroll;
+
 }
 
-.links {
+.footer footer-item {
   display: inline-block;
 }
 
