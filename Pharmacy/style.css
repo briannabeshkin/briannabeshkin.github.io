@@ -2,22 +2,15 @@
 
 #collapsibleNavbar {
   font-size: 20px;
-
 }
 
 .navbar-nav{
-  width: max-content;
+
   margin: auto;
   display: flex;
   flex-shrink: 1;
 }
 
-.collapse li {
-  /*margin: 10px 80px;*/
-  padding-left: 50px;
-  padding-right: 50px;
-  /*transform: translate(-20%, 0);*/
-}
 
 nav {
   display: inline-block;
@@ -25,7 +18,7 @@ nav {
 }
 
 .nav-link {
-
+  align-items: left;
 }
 
 .wrapper{
@@ -37,6 +30,13 @@ nav {
   position: fixed;
 }
 
+.collapse li {
+  /*margin: 10px 80px;*/
+  padding-left: 50px;
+  padding-right: 50px;
+  /*transform: translate(-20%, 0);*/
+}
+
 @media(max-width:1200px)  {
   .navbar {
     background-color: white;
@@ -46,6 +46,15 @@ nav {
   }
   .btn-group {
     transform: translate(0,-50px);
+  }
+  .navbar li {
+    border-top: 1px solid rgb(225, 225, 225);
+  }
+  .nav-item-last {
+    border-bottom: 1px solid rgb(225, 225, 225);
+  }
+  .collapse {
+    padding-left: 0;
   }
 }
 
@@ -68,7 +77,7 @@ nav {
 }
 
 .boxTitle {
-  font-size: 350%;
+  font-size: 4vw;
 }
 
 
@@ -212,13 +221,20 @@ right: 0;
   top: 600px;
 }
 
+.btn-group:not(:first-child) {
+  border-right: 1px solid #ddd;
+}
+
 .btn-group button {
   background-color:  rgb(86, 164, 223); /* Green background */
-  border: none; /*Green border */
+  border-right: 1px solid;
+  border-color: white;
   color: white; /* White text */
   padding: 20px 23px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
+  border-top: 0;
+  border-bottom: 0;
 }
 
 .btn-group button:not(:last-child) {
