@@ -46,7 +46,6 @@ nav {
 
 /*slideshow*/
 
-
 .title{
  /* background-color: rgba(30, 57, 81, 0.722);*/
   width: 60%;
@@ -56,6 +55,10 @@ nav {
   top: 360px;
   left: 60px;
   color:black;
+}
+
+.top img {
+  max-width:100%;
 }
 
 .boxTitle {
