@@ -28,11 +28,9 @@ nav {
 }
 
 .wrapper{
-  position: fixed;
 	margin: 0px;
   top: 0px;
   z-index: 10;
-  position: sticky;
 }
 
 @media(max-width:1200px)  {
@@ -123,3 +121,4 @@ nav {
 .top {
   margin-top: 547px;
 }
+
