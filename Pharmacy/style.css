@@ -75,13 +75,13 @@ nav {
 .mySlides {
   position: absolute;
   transform: translate(0,-50px);
-  z-index:-2;
+  z-index: -2;
   top: 0;
-  right:0;
+  right: 0;
   width: 100%;
-  max-height:650px;
+  max-height: 650px;
   height: auto;
-  min-height: 60px;
+  min-height: 600px;
 }
 
 
