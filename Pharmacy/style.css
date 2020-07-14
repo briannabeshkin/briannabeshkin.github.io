@@ -21,10 +21,11 @@
 
 nav {
   display: inline-block;
+  position: fixed;
 }
 
 .nav-link {
-  font-weight: bold;
+
 }
 
 .wrapper{
@@ -32,6 +33,8 @@ nav {
   top: 0px;
   z-index: 10;
   width: 100%;
+  background-color: white;
+  position: fixed;
 }
 
 @media(max-width:1200px)  {
@@ -55,7 +58,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  top: 300px;
+  top: 350px;
   left: 60px;
   color:black;
 }
@@ -65,7 +68,6 @@ nav {
 }
 
 .boxTitle {
-  font-weight: bold;
   font-size: 350%;
 }
 
@@ -79,7 +81,7 @@ nav {
   width: 100%;
   max-height:650px;
   height: auto;
-  min-height: 600px;
+  min-height: 60px;
 }
 
 
@@ -217,7 +219,6 @@ right: 0;
   padding: 20px 23px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  font-weight: bold;
 }
 
 .btn-group button:not(:last-child) {
@@ -233,6 +234,6 @@ right: 0;
 
 /* Add a background color on hover */
 .btn-group button:hover {
-  background-color:   rgb(47, 93, 128);
+  background-color:   rgb(98, 187, 255);
   transition: 0.6s ease;
 }
