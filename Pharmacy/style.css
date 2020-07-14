@@ -41,6 +41,9 @@ nav {
   .wrapper {
     position: fixed;
   }
+  .btn-group {
+    transform: translate(0,-50px);
+  }
 }
 
 
@@ -62,7 +65,6 @@ nav {
 }
 
 .boxTitle {
-
   font-weight: bold;
   font-size: 350%;
 }
@@ -70,13 +72,13 @@ nav {
 
 .mySlides {
   position: absolute;
-  /*transform: translate(0,0);*/
+  transform: translate(0,-50px);
   z-index:-2;
   top: 0;
   right:0;
   width: 100%;
-  max-height:710px;
-  min-height: 650px;
+  max-height:650px;
+  min-height: 600px;
 }
 
 
@@ -117,7 +119,7 @@ nav {
 }
 
 .content {
-top: 750px; 
+top: 680px; 
 position: absolute;
 left: 0;
 right: 0;
@@ -145,6 +147,8 @@ right: 0;
   float: left;
   margin-right: auto;
   position: relative;
+  width: 25%;
+  position: scroll;
 }
 
 /* Clear floats after the columns */
@@ -155,11 +159,8 @@ right: 0;
 }
 
 .linkslist {
-  float: middle;
-  margin-right: 40px;;
-  vertical-align: middle;
   list-style-type: none;
-
+  width: 100%;
 }
 
 .footer{
@@ -168,16 +169,7 @@ right: 0;
   top: 80px;
   white-space: nowrap;
   overflow-x: scroll;
-}
-
-.column {
-  display: inline-block;
-  width: 25%;
-  position: scroll;
-}
-
-.content {
-  display: inline-block;
+  width: 100%;
 }
 
 .footerPic {
@@ -197,7 +189,6 @@ right: 0;
   margin-left: 40px;
 }
 
-
 .contact img {
   height: 25px;
   padding-right: 10px;
@@ -216,7 +207,7 @@ right: 0;
 /*buttons*/
 
 .btn-group {
-  top: 650px;
+  top: 600px;
 }
 
 .btn-group button {
