@@ -32,8 +32,8 @@ nav {
 
 .collapse li {
   /*margin: 10px 80px;*/
-  padding-left: 50px;
-  padding-right: 50px;
+
+  padding-right: 100px;
   /*transform: translate(-20%, 0);*/
 }
 
@@ -55,6 +55,17 @@ nav {
   }
   .collapse {
     padding-left: 0;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  .column{
+    padding-right: 200px;
+    padding-left: 50px;
+  }
+
+  .column :not(.links) {
+    padding-left: 50px;
   }
 }
 
@@ -80,6 +91,10 @@ nav {
   font-size: 4vw;
 }
 
+.mission {
+  font-size: 2vw;
+}
+
 
 .mySlides {
   position: absolute;
@@ -90,7 +105,7 @@ nav {
   width: 100%;
   max-height: 650px;
   height: auto;
-  min-height: 600px;
+  min-height: 650px;
 }
 
 
@@ -161,6 +176,12 @@ right: 0;
   position: relative;
   width: 25%;
 }
+
+.footer {
+  overflow: hidden;
+}
+
+
 
 /* Clear floats after the columns */
 .row:after {
