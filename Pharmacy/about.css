@@ -39,9 +39,25 @@ nav {
   }
 }
 
-#current {
-  color: rgb(86, 164, 223);
+#current { 
+  color: rgb(40, 107, 159);
+  text-decoration: underline;
 }
+
+
+/*content*/
+.content h2{
+  text-align: center;
+  color:  rgb(40, 107, 159);
+}
+
+.content {
+
+position: absolute;
+left: 0;
+right: 0;
+}
+
 
 
 /* footer*/
