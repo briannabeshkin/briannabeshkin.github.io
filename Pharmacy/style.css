@@ -127,6 +127,7 @@ nav li {
   min-height: 645px;
   max-height: 645px;
   object-fit: cover;
+  object-position: 90% 25%;
 }
 
 
@@ -231,8 +232,6 @@ right: 0;
   width: 100%;
   position: relative;
   overflow: hidden;
-  object-fit: cover;
-  object-position: 200px 200%;
 }
 
 .column, .footer h3 {
