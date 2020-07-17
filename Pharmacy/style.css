@@ -5,30 +5,30 @@
 }
 
 .navbar-nav{
-
+  background-color: white;
   margin: auto;
   display: flex;
   flex-shrink: 1;
+  
 }
 
 .empty {
   height: 30px;
   width: 100%;
-  background-color: rgb(40, 107, 159);
+  background-color: rgb(3, 77, 133);
   z-index: 2;
 }
-
 
 
 nav {
   display: inline-block;
   height: 80px;
   border-bottom: 1px solid grey;;
-  z-index: -2
+  z-index: -2;
 }
 
-.nav-link {
-  align-items: left;
+nav li {
+  float:right;
 }
 
 .wrapper{
@@ -38,12 +38,20 @@ nav {
   width: 100%;
   background-color: white;
   position: fixed;
+
+}
+
+.collapse {
+  transform: translate(30%, 0);
 }
 
 .collapse li {
-  /*margin: 10px 80px;*/
-  margin-right: 90px;
- /*transform: translate(90%, 0);*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.collapse li:hover {
+  background-color: rgba(211, 211, 211, 0.544);
 }
 
 @media(max-width:1200px)  {
@@ -63,7 +71,7 @@ nav {
     border-bottom: 1px solid rgb(225, 225, 225);
   }
   .collapse {
-    padding-left: 0;
+    transform: translate(0, 0);
   }
 }
 
@@ -101,6 +109,7 @@ nav {
 
 .boxTitle {
   font-size: 3vw;
+
 }
 
 .mission {
@@ -110,11 +119,11 @@ nav {
 
 .mySlides {
   position: absolute;
-  transform: translate(0,40px);
+  transform: translate(0,10px);
   z-index: -2;
   top: 70px;
   right: 0;
-  width: 110%;
+  width: 100%;
   min-height: 645px;
   max-height: 645px;
   object-fit: cover;
@@ -154,7 +163,7 @@ nav {
 
 .content h2{
   text-align: center;
-  color:  rgb(40, 107, 159);
+  color:  rgb(68, 145, 203);
 }
 
 .content {
@@ -223,6 +232,7 @@ right: 0;
   position: relative;
   overflow: hidden;
   object-fit: cover;
+  object-position: 200px 200%;
 }
 
 .column, .footer h3 {
@@ -251,7 +261,7 @@ right: 0;
 /*buttons*/
 
 .btn-group {
-  top: 740px;
+  top: 720px;
 }
 
 .btn-group:not(:first-child) {
@@ -259,7 +269,7 @@ right: 0;
 }
 
 .btn-group button {
-  background-color:  rgb(40, 107, 159); /* Green background */
+  background-color:  rgb(68, 145, 203); /* Green background */
   border-right: 1px solid;
   border-color: white;
   color: white; /* White text */
@@ -283,7 +293,6 @@ right: 0;
 
 /* Add a background color on hover */
 .btn-group button:hover {
-  background-color: rgb(40, 107, 159);;
+  background-color:  rgb(89, 180, 250);
   transition: 0.6s ease;
 }
-
