@@ -27,8 +27,6 @@ nav {
   border-bottom: 1px solid grey;
 }
 
-
-
 .wrapper{
 	margin: 0px;
   top: 0px;
@@ -159,7 +157,7 @@ color: grey;
   bottom: 80px;
   color: black;
   height: 80px;
-  width: 700px;
+  width: 79%;
   background-color:  rgba(68, 144, 203, 0.591);
   color: white;
   text-align: left;
