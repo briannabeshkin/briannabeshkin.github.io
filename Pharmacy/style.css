@@ -203,6 +203,7 @@ color: grey;
 }
 
 .footer{
+  position: absolute;
   text-align: center;
   margin-top: 3800px;
   top: 80px;
