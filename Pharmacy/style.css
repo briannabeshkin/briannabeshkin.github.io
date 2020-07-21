@@ -2,89 +2,62 @@
 
 #collapsibleNavbar {
   font-size: 20px;
+
 }
 
 .navbar-nav{
-  background-color: white;
+  width: max-content;
   margin: auto;
   display: flex;
   flex-shrink: 1;
-  
 }
 
-.empty {
-  height: 30px;
-  width: 100%;
-  background-color: rgb(3, 77, 133);
-  z-index: 2;
+.collapse li {
+  margin-right: 100px;
+  top: 50px;
 }
 
+.collapse {
+  margin-right: 100px;
+}
 
 nav {
   display: inline-block;
-  height: 80px;
-  border-bottom: 1px solid grey;;
-  z-index: -2;
+  min-height: 80px;
+  border-bottom: 1px solid grey;
 }
 
-nav li {
-  float:right;
-}
+
 
 .wrapper{
 	margin: 0px;
   top: 0px;
   z-index: 10;
+  position: fixed;
   width: 100%;
   background-color: white;
-  position: fixed;
-
 }
 
-.collapse {
-  transform: translate(30%, 0);
-}
-
-.collapse li {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.collapse li:hover {
-  background-color: rgba(211, 211, 211, 0.544);
+.homeLogo {
+  position: absolute;
+  height: 150px;
+  transform: translate(80%, -50%);
+  z-index: 4;
 }
 
 @media(max-width:1200px)  {
   .navbar {
     background-color: white;
   }
-  .wrapper {
-    position: fixed;
-  }
-  .btn-group {
-    transform: translate(0,-50px);
-  }
-  .navbar li {
-    border-top: 1px solid rgb(225, 225, 225);
-  }
-  .nav-item-last {
-    border-bottom: 1px solid rgb(225, 225, 225);
-  }
-  .collapse {
-    transform: translate(0, 0);
+  
+  .homeLogo {
+    transform: translate(0, -50%);
   }
 }
 
-@media only screen and (max-device-width: 600px) {
-  .column{
-    padding-right: 200px;
-    padding-left: 50px;
-  }
 
-  .column :not(.links) {
-    padding-left: 50px;
-  }
-}
+
+
 
 
 /*slideshow*/
@@ -119,14 +92,13 @@ nav li {
 
 .mySlides {
   position: absolute;
-  transform: translate(0,10px);
   z-index: -2;
-  top: 70px;
+  top: 65px;
   right: 0;
   width: 100%;
   min-height: 645px;
   max-height: 645px;
-  object-fit: cover;
+  object-fit: stretch;
   object-position: 90% 25%;
 }
 
@@ -168,15 +140,36 @@ nav li {
 }
 
 .content {
-top: 850px; 
+top: 750px; 
 position: absolute;
 left: 0;
 right: 0;
+text-align: center;
+font-size: 20px;
+color: grey;
 }
 
-.content h5 {
-  text-align: center;
-  color: grey;
+.homeNav {
+ height: 500px;
+ width: 700px;
+}
+
+.contentNav {
+  position: relative;
+  bottom: 80px;
+  color: black;
+  height: 80px;
+  width: 700px;
+  background-color:  rgba(68, 144, 203, 0.591);
+  color: white;
+  text-align: left;
+  padding-top: 20px;
+  padding-left:20px;
+  margin: auto;
+}
+
+.contentP {
+  margin-bottom: 100px;
 }
 
 
@@ -199,12 +192,6 @@ right: 0;
   width: 25%;
 }
 
-.footer {
-  overflow: hidden;
-}
-
-
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -218,11 +205,10 @@ right: 0;
 }
 
 .footer{
-  text-align:center;
-  margin-top: 1000px;
+  text-align: center;
+  margin-top: 3800px;
   top: 80px;
   white-space: nowrap;
-  overflow-x: scroll;
   width: 100%;
 }
 
@@ -256,42 +242,9 @@ right: 0;
   margin-top: 547px;
 }
 
+.footerLogo {
 
-/*buttons*/
-
-.btn-group {
-  top: 720px;
+  height: 200px;
+  transform: translate(0, -5%);
 }
 
-.btn-group:not(:first-child) {
-  border-right: 1px solid #ddd;
-}
-
-.btn-group button {
-  background-color:  rgb(68, 145, 203); /* Green background */
-  border-right: 1px solid;
-  border-color: white;
-  color: white; /* White text */
-  padding: 20px 23px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
-  border-top: 0;
-  border-bottom: 0;
-}
-
-.btn-group button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
-
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Add a background color on hover */
-.btn-group button:hover {
-  background-color:  rgb(89, 180, 250);
-  transition: 0.6s ease;
-}
