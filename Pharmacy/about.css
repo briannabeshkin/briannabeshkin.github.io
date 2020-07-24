@@ -108,8 +108,7 @@ nav {
 
 /*content*/
 
-.content h2{
-  text-align: center;
+.content h2 {
   color:  rgb(68, 145, 203);
 }
 
@@ -146,6 +145,19 @@ color: grey;
   margin-bottom: 100px;
 }
 
+.content ul {
+  list-style: none;
+}
+
+.medicine {
+  float: center;
+  text-align: center;
+  max-height: 190px;
+  overflow-y: scroll;
+  margin-top: 20px;
+  
+}
+
 
 /* footer*/
 
@@ -155,7 +167,6 @@ color: grey;
 }
 
 .links a:hover, .contact a:hover {
-  text-decoration:bold;
   color: black;
 }
 
@@ -166,6 +177,20 @@ color: grey;
   width: 25%;
 }
 
+@media(max-width:500px)  {
+  .column {
+    width: 300px;
+  }
+  .location {
+    transform: translate(25%, 0%);
+    margin-top: 20px;
+  }
+  .footerLogo {
+    margin-top: 20px;
+    position: relative;
+    left: 40px;
+  }
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -175,7 +200,6 @@ color: grey;
 
 .linkslist {
   list-style-type: none;
-  width: 100%;
 }
 
 .footer{
@@ -183,7 +207,16 @@ color: grey;
   text-align: center;
   margin-top: 700px;
   top: 80px;
-  white-space: nowrap;
+  white-space: normal;
+  width: 100%;
+}
+
+.bottom {
+  position: absolute;
+  text-align: center;
+  margin-top: 700px;
+  top: 80px;
+  white-space: normal;
   width: 100%;
 }
 
@@ -218,7 +251,6 @@ color: grey;
 }
 
 .footerLogo {
-
   height: 200px;
   transform: translate(0, -5%);
 }

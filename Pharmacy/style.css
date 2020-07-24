@@ -24,12 +24,8 @@ nav {
   display: inline-block;
 }
 
-.nav-link {
+.navbar-nav a{
   font-weight: bold;
-}
-
-.mySlides {
-  object-fit: stretch;
 }
 
 .wrapper{
@@ -40,7 +36,7 @@ nav {
 
 @media(max-width:1200px)  {
   .navbar {
-    background-color: white;
+    background-color: black;
   }
 }
 
@@ -49,6 +45,11 @@ nav {
   height: 140px;
   transform: translate(80%, -50%);
   z-index: 4;
+}
+
+#current {
+  text-decoration: underline;
+  color: black;
 }
 
 @media(max-width:1200px)  {
@@ -60,6 +61,7 @@ nav {
     transform: translate(0, -50%);
   }
 }
+
 
 
 /*slideshow*/
@@ -90,6 +92,7 @@ nav {
 .mission {
   font-size: 1.5vw;
 }
+
 
 
 .mySlides {
@@ -159,9 +162,8 @@ color: grey;
 .contentNav {
   position: relative;
   bottom: 80px;
-  color: black;
   height: 80px;
-  width: 700px;
+  max-width: 700px;
   background-color:  rgba(68, 144, 203, 0.591);
   color: white;
   text-align: left;
@@ -183,7 +185,6 @@ color: grey;
 }
 
 .links a:hover, .contact a:hover {
-  text-decoration:bold;
   color: black;
 }
 
@@ -194,6 +195,20 @@ color: grey;
   width: 25%;
 }
 
+@media(max-width:500px)  {
+  .column {
+    width: 300px;
+  }
+  .location {
+    transform: translate(25%, 0%);
+    margin-top: 20px;
+  }
+  .footerLogo {
+    margin-top: 20px;
+    position: relative;
+    left: 40px;
+  }
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -203,7 +218,6 @@ color: grey;
 
 .linkslist {
   list-style-type: none;
-  width: 100%;
 }
 
 .footer{
@@ -211,7 +225,7 @@ color: grey;
   text-align: center;
   margin-top: 3800px;
   top: 80px;
-  white-space: nowrap;
+  white-space: normal;
   width: 100%;
 }
 
@@ -246,7 +260,6 @@ color: grey;
 }
 
 .footerLogo {
-
   height: 200px;
   transform: translate(0, -5%);
 }
