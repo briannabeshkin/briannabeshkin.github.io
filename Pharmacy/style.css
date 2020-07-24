@@ -1,3 +1,8 @@
+body {
+  overflow-x: hidden;
+}
+
+
 /*navigation bar*/
 
 #collapsibleNavbar {
@@ -80,9 +85,6 @@ nav {
   background-color: rgba(255, 255, 255, 0.797);
 }
 
-.top img {
-  max-width:100%;
-}
 
 .boxTitle {
   font-size: 3vw;
