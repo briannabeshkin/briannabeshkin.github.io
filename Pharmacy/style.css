@@ -2,7 +2,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /*navigation bar*/
 
 #collapsibleNavbar {
@@ -39,11 +38,6 @@ nav {
   z-index: 10;
 }
 
-@media(max-width:1200px)  {
-  .navbar {
-    background-color: white;
-  }
-}
 
 .homeLogo {
   position: absolute;
@@ -147,24 +141,27 @@ nav {
 }
 
 .content {
-top: 750px; 
-position: absolute;
-left: 0;
-right: 0;
-text-align: center;
-font-size: 20px;
-color: grey;
+  top: 750px; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 20px;
+  color: grey;
+  
 }
 
 .homeNav {
- height: 500px;
- width: 700px;
-}
-
-.contentNav {
+  height: 500px;  
+  width: 100%;
+  max-width: 700px;
+ }
+ 
+ .contentNav {
   position: relative;
   bottom: 80px;
   height: 80px;
+  width: 100%;
   max-width: 700px;
   background-color:  rgba(68, 144, 203, 0.591);
   color: white;
@@ -172,7 +169,7 @@ color: grey;
   padding-top: 20px;
   padding-left:20px;
   margin: auto;
-}
+ }
 
 .contentP {
   margin-bottom: 100px;
@@ -210,6 +207,11 @@ color: grey;
     position: relative;
     left: 40px;
   }
+  hr {
+    position: relative;
+    top: 20px;
+  }
+
 }
 /* Clear floats after the columns */
 .row:after {
