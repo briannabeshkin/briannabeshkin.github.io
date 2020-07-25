@@ -190,6 +190,10 @@ color: grey;
     transform: translate(25%, 0%);
     margin-top: 20px;
   }
+  .locationServices {
+    transform: translate(18%, 0%);
+    margin-top: 20px;
+  }
   .footerLogo {
     margin-top: 20px;
     position: relative;
@@ -216,10 +220,20 @@ color: grey;
   width: 100%;
 }
 
+.footerServices{
+  position: absolute;
+  text-align: center;
+  margin-top:810px;
+  top: 80px;
+  white-space: normal;
+  width: 100%;
+}
+
+
 .bottom {
   position: absolute;
   text-align: center;
-  margin-top: 700px;
+  margin-top: 750px;
   top: 80px;
   white-space: normal;
   width: 100%;
