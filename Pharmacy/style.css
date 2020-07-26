@@ -28,9 +28,8 @@ nav {
   display: inline-block;
 }
 
-.navbar-nav a{
+.nav-link {
   font-weight: bold;
-  
 }
 
 .wrapper{
@@ -39,6 +38,11 @@ nav {
   z-index: 10;
 }
 
+@media(max-width:1200px)  {
+  .navbar {
+    background-color: white;
+  }
+}
 
 .homeLogo {
   position: absolute;
@@ -95,13 +99,12 @@ nav {
 .mySlides {
   position: absolute;
   z-index: -2;
-  top: 65px;
+  top: 70px;
   right: 0;
   width: 100%;
   min-height: 645px;
   max-height: 645px;
-  object-fit: stretch;
-  object-position: 90% 25%;
+  object-fit: cover;
 }
 
 
