@@ -156,9 +156,9 @@ nav {
 }
 
 .homeNav {
-  height: 500px;  
+  height: 300px;  
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
  }
  
  .contentNav {
@@ -166,7 +166,7 @@ nav {
   bottom: 80px;
   height: 80px;
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
   background-color:  rgba(68, 144, 203, 0.591);
   color: white;
   text-align: left;
