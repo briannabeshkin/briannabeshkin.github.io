@@ -5,22 +5,31 @@ body {
 /*navigation bar*/
 
 #collapsibleNavbar {
-  font-size: 20px;
+  font-size: 17px;
 
 }
 
 .navbar-nav{
-  width: max-content;
-  margin: auto;
+
+
   display: flex;
   flex-shrink: 1;
-  padding-right: 300px;
+
+}
+#about {
+    margin-left: 80px;
+}
+
+#current1 {
+     margin-left: 80px;   
+     text-decoration: underline;
+     color: black;
 }
 
 .collapse li {
   /*margin: 10px 80px;*/
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
   /*transform: translate(-20%, 0);*/
 }
 
@@ -28,9 +37,7 @@ nav {
   display: inline-block;
 }
 
-.nav-link {
-  font-weight: bold;
-}
+
 
 .wrapper{
 	margin: 0px;
@@ -255,7 +262,7 @@ color: grey;
 }
 
 .column, .footer h3 {
-  font-size: 1.1em;
+  font-size: .8em;
 }
 
 .links h3 {
@@ -277,7 +284,7 @@ color: grey;
 }
 
 .footerLogo {
-  height: 200px;
+  height: 150px;
   transform: translate(0, -5%);
 }
 
