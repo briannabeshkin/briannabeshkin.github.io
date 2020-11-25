@@ -16,9 +16,7 @@ body {
   flex-shrink: 1;
 
 }
-#about {
-    margin-left: 80px;
-}
+
 
 #current1 {
      margin-left: 80px;   
@@ -232,6 +230,10 @@ color: grey;
   top: 80px;
   white-space: normal;
   width: 100%;
+}
+
+.footer h3 {
+  font-size: .8em;
 }
 
 .footerServices{

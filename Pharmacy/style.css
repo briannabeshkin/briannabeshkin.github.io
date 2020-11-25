@@ -10,8 +10,6 @@ body {
 }
 
 .navbar-nav{
-
-
   display: flex;
   flex-shrink: 1;
 
@@ -41,6 +39,14 @@ nav {
 @media(max-width:1200px)  {
   .navbar {
     background-color: white;
+  }
+
+  .nav-link {
+  transform: translate(25%, 0);
+  }
+
+  #about {
+    margin-right: 240px;
   }
 }
 
@@ -231,7 +237,7 @@ nav {
 .footer{
   position: absolute;
   text-align: center;
-  margin-top: 3800px;
+  margin-top: 2800px;
   top: 80px;
   white-space: normal;
   width: 100%;
