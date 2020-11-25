@@ -1,0 +1,45 @@
+<!-- 
+DTD for mediated schema. This DTD lists all elements and shows the accurate nestedness, 
+but it does not describe the frequency of elements correctly (yet). 
+-->
+<!ELEMENT root (listing*)>
+<!ELEMENT listing (seller_info,payment_types,shipping_info,buyer_protection_info,auction_info,bid_history,item_info)>
+
+<!ELEMENT seller_info (seller_name,seller_rating)>
+<!ELEMENT seller_name (#PCDATA)>
+<!ELEMENT seller_rating (#PCDATA)>
+
+<!ELEMENT payment_types (#PCDATA)>
+<!ELEMENT shipping_info (#PCDATA)>
+<!ELEMENT buyer_protection_info (#PCDATA)>
+
+<!ELEMENT auction_info (current_bid,time_left,high_bidder,num_items,num_bids,started_at,bid_increment,location,opened,
+closed,id_num,notes)>
+<!ELEMENT current_bid (#PCDATA)>
+<!ELEMENT time_left (#PCDATA)>
+
+<!ELEMENT high_bidder (bidder_name,bidder_rating)>
+<!ELEMENT bidder_name (#PCDATA)>
+<!ELEMENT bidder_rating (#PCDATA)>
+
+<!ELEMENT num_items (#PCDATA)>
+<!ELEMENT num_bids (#PCDATA)>
+<!ELEMENT started_at (#PCDATA)>
+<!ELEMENT bid_increment (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT opened (#PCDATA)>
+<!ELEMENT closed (#PCDATA)>
+<!ELEMENT id_num (#PCDATA)>
+<!ELEMENT notes (#PCDATA)>
+
+<!ELEMENT bid_history (highest_bid_amount,quantity)>
+<!ELEMENT highest_bid_amount (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+
+<!ELEMENT item_info (memory,hard_drive,cpu,brand,description)>
+<!ELEMENT memory (#PCDATA)>
+<!ELEMENT hard_drive (#PCDATA)>
+<!ELEMENT cpu (#PCDATA)>
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+

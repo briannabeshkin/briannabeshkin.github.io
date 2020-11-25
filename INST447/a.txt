@@ -1,0 +1,5 @@
+<stars>
+<star><name>blue</name><mass>2.5-90</mass><age>less 40 million years</age>
+</star>
+<star><name>red dwarf</name><mass>0.08-0.45</mass><age>100k - 10 billion years</age></star>
+</stars>

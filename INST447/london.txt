@@ -1,0 +1,7 @@
+<london>
+<area><name>city of london</name><average_price>775309</average_price><no_of_crimes>1680</no_of_crimes></area>
+<area><name>brexley</name><average_price>331683</average_price><no_of_crimes>1616</no_of_crimes></area>
+<area><name>brent</name><average_price>408523</average_price><no_of_crimes>2510</no_of_crimes></area>
+<area><name>cambden</name><average_price>810298</average_price><no_of_crimes>3214</no_of_crimes></area>
+<area><name>sutton</name><average_price>371626</average_price><no_of_crimes>1350</no_of_crimes></area>
+</london>
